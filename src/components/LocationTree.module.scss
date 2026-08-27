@@ -1,0 +1,61 @@
+.tree {
+  height: 100%;
+  overflow: auto;
+  padding: 8px;
+}
+
+.root,
+.children {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.children {
+  margin-left: 4px;
+  border-left: 1px dashed rgba(15, 23, 42, 0.15);
+}
+
+.node {
+  margin: 2px 0;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  padding-left: calc(10px + var(--depth, 0) * 14px);
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #0f172a;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.row:hover {
+  background: rgba(14, 165, 233, 0.1);
+}
+
+.rowSelected {
+  background: rgba(14, 165, 233, 0.18);
+  font-weight: 600;
+}
+
+.rowLeaf .label {
+  color: #0369a1;
+}
+
+.chevron {
+  width: 1em;
+  color: #64748b;
+  text-align: center;
+}
+
+.label {
+  flex: 1;
+}
