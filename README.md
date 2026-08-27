@@ -13,6 +13,10 @@ Interactive React + TypeScript demo: browse a location hierarchy and explore SVG
    - **Shape filters** (circle / rectangle / star) mapped by SVG id
    - Color, rotation, and filters **persist** when switching buildings
 
+## Live demo
+
+https://kuttenajith.github.io/task-master/
+
 ## Run locally
 
 ```bash
@@ -23,6 +27,7 @@ npm start
 ```bash
 npm test -- --watchAll=false
 npm run build
+npm run deploy   # publishes build/ to GitHub Pages (gh-pages branch)
 ```
 
 ## Project layout
